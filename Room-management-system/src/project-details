@@ -1,0 +1,30 @@
+//Hotel Management system
+
+//methods in menu
+new reservation
+check reservation
+get room no
+update reservation
+delete reservation
+
+//schema
+hotel-db
+table -reservation
+schema
+ -reservation id int auto inc
+ -room no int not null
+ -guest-name varchar not null
+ -contact-no varchar not null
+ -resdata timestamp deafult
+
+ //sql command to be used
+ show databases
+ create database hotel-db
+ use hotel-db
+ create table reservation(
+     rid int auto_increment primary key,
+     quest_name varchar(255) not null,
+     room_no int not null,
+     contact_no varchar(10) not null,
+     reservation_date timestamp default current_timestamp
+     );
